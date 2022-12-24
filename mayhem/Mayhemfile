@@ -1,9 +1,9 @@
-project: proj
+project: python-slugify
 
-target: fuzzer
+target: fuzz_slugify
 
 image: ghcr.io/ethanm27/slugify:latest
 
 cmds:
-    - cmd: /src/mayhem/fuzzer.py
+    - cmd: /src/mayhem/fuzz_slugify.py
       libfuzzer: true
